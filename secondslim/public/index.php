@@ -12,6 +12,7 @@ $app = AppFactory::create();
 $app->get("/secondslim/public/hello",
     function(ServerRequestInterface $request, ResponseInterface $response, array $args): ResponseInterface {
         print("Hello World!!\n");
+        print("<BR>");
         print($_SERVER["DOCUMENT_ROOT"]."/secondslim/vendor/autoload.php");
         return $response;
     }
